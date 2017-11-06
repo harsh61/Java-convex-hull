@@ -1,0 +1,31 @@
+public void drawNextLine() {
+	current = left most data point
+	next;
+	reachedOnce = false
+	reachedAgain = false
+
+	do {
+		if reachedOnce
+			reachedAgain = true
+
+		next = (current + 1) % xList.size()
+		
+		for: 0 to number of total data points
+			if (CCW(x1,y1,x2,y2,x3,y3)
+				next = current loop iteration number
+		
+		add current point to hull 
+		current = next
+		
+		if current = left most data point
+			reachedOnce = true
+	
+	} while (!reachedAgain);
+}
+
+public boolean checkCCW(double x1, double y1, double x2, double y2, double x3, double y3) {
+	if (((y2 - y1) * (x3 - x2) - (x2 - x1) * (y3 - y2)) >= 0)
+		return false
+	else
+		return true
+}
